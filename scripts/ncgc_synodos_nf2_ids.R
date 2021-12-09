@@ -188,6 +188,19 @@ map_for_synapse <- map_1 %>%
   })) 
 
 write_csv(map_for_synapse, 'synapse_files/synodos_nf2_screen_structures.csv')
+syn$store(synapseclient$File('synapse_files/synodos_nf2_screen_structures.csv', parentId= 'syn26532680',
+                             used = c(
+                               "syn12292393",  ##NTAP pNF NCATS single agent
+                               "syn12292601",  ##NF2 Synodos 10x10 NCATS combination
+                               "syn12293222",  ##NF2 Synodos 6x6 NCATS combination
+                               "syn12296219",  ##NF2 Synodos NCATS single agent MIPE 4.0
+                               "syn12297785",
+                               "syn18457540",
+                               "syn18457543",
+                               "syn18457501", 
+                               "syn18457503",
+                               "syn18457533"), executed = 'https://raw.githubusercontent.com/allaway/pubchem_curation/main/scripts/ncgc_synodos_nf2_ids.R'))
+
 
 
 convert_cid_to_title <- function (input_id, output_type = c("Title")) {

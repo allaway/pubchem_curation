@@ -257,7 +257,7 @@ map_for_synapse <- mapped %>%
 
 write_csv(map_for_synapse,'synapse_files/synnf1_minnesota_screening_structures.csv')
 syn$store(synapseclient$File('synapse_files/synnf1_minnesota_screening_structures.csv', parentId= 'syn26532680',
-                             used = c('syn12292395','syn11527695'), executed = ))
+                             used = c('syn12292395','syn11527695'), executed = 'https://raw.githubusercontent.com/allaway/pubchem_curation/main/scripts/synodos_nf1_minnesota.R'))
 
 
 # 

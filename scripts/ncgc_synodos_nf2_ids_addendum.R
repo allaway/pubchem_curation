@@ -41,6 +41,3 @@ write_csv(map_submit, "submission_files/pubchem_submission_2_12062022.csv", na =
 
 
 
-
-
-
